@@ -15,7 +15,7 @@ provider "aws" {
 # create an S3 bucket by using the aws_s3_bucket resource
 
 resource "aws_s3_bucket" "cdeterraform_bkt" { 
-  bucket = "cdejoachimbucket" 
+  bucket = "cde_joachim_bucket" 
 }  
 
 # enable versioning on the S3 bucket 
@@ -59,4 +59,3 @@ resource "aws_s3_bucket_public_access_block" "public_access" {
   ignore_public_acls      = true 
   restrict_public_buckets = true 
 } 
-
